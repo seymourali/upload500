@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "209e58ff-14d5-4c3d-8748-5928162780bf",
+		"name": "Upload500",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4251601"
+	},
+	"item": [
+		{
+			"name": "guest",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"simon@gmail.com\",\r\n    \"password\": \"Test1234\",\r\n    \"password_confirmation\": \"Test1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UPLOAD500_HOST}}/api/auth/register",
+									"host": [
+										"{{UPLOAD500_HOST}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"simon@gmail.com\",\r\n    \"password\": \"Test1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UPLOAD500_HOST}}/api/auth/login",
+									"host": [
+										"{{UPLOAD500_HOST}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "general",
+			"item": [
+				{
+					"name": "import",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{UPLOAD500_HOST}}/api/import",
+							"host": [
+								"{{UPLOAD500_HOST}}"
+							],
+							"path": [
+								"api",
+								"import"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

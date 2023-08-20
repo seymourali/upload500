@@ -1,0 +1,30 @@
+export const AUTH_SUCCESS = `AUTH_SUCCESS`;
+export const AUTH_RESPONSE = `AUTH_RESPONSE`
+export const AUTH_CLEAR = `AUTH_CLEAR`
+export const AUTH_USER_GRABBED = `AUTH_USER_GRABBED`
+export const AUTH_USER = `AUTH_USER`
+
+export const SET_MAIN_CATEGORIES        = `SET_MAIN_CATEGORIES`
+export const SET_PRODUCTS_BY_CATEGORY   = `SET_PRODUCTS_BY_CATEGORY`
+export const SET_CATEGORY               = `SET_CATEGORY`
+export const SET_PRODUCT                = `SET_PRODUCT`
+export const SET_CITIES                 = `SET_CITIES`
+export const SET_PRODUCTS_BY_SEARCH     = `SET_PRODUCTS_BY_SEARCH`
+
+export const ADD_TO_CART = `ADD_TO_CART`
+export const REMOVE_FROM_CART = `REMOVE_FROM_CART`
+export const UPDATE_CART_PRODUCT_QUANTITY = `UPDATE_CART_PRODUCT_QUANTITY`
+export const RESET_CART = `RESET_CART`
+export const SAVE_CART = `SAVE_CART`
+
+/**
+ * Account
+ */
+export const SET_ACCOUNT_ADDRESSES = `SET_ACCOUNT_ADDRESSES`
+export const SET_ACCOUNT_USER_DATA = `SET_ACCOUNT_USER_DATA`
+export const SET_ACCOUNT_DATA_FIELD = `SET_ACCOUNT_DATA_FIELD`
+
+/**
+ * Home
+ */
+export const SET_HOME_BESTSELLER_PRODUCTS = `SET_HOME_BESTSELLER_PRODUCTS`
